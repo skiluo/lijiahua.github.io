@@ -1,126 +1,46 @@
-# Pacman
+# Jekyll-Jacman
 
-Pacman is a flat and responsive design theme for [Hexo](http://hexo.io).
+以前的博客主题已不再维护，如果需要请移步 [jekyll-simpleyyt](https://github.com/Simpleyyt/jekyll-simpleyyt)。
 
-[Demo](https://github.com/Voidly/pacman) || [Voidy's Blog](http://voidy.net)
+Jacman 这主题是从 Hexo 版的 Jacman 主题移植过来的，个人比较喜欢。
 
-[原作者](http://A-limon.github.io/pacman)
+Jekyll-Jacman 是为 [Jekyll](http://jekyllrb.com) 设计的一款清新且具有响应式的主题，拥有更丰富的特性并支持了很多的国内服务。Jacman 始于 [Jacman](https://github.com/wuchong/jacman) 移植而来。
 
-中文说明请访问[这里](http://A-limon.github.io/pacman/hello/introducing-pacman-theme/)
-##Installation
-###Install
-```
-$ git clone https://github.com/Voidly/pacman.git themes/pacman
-```
-**Pacman requires Hexo 2.4.5 and above.** 
-###Enable
-Modify `theme` setting in blog folder` _config.yml` to `pacman`.
-###Update
-```
-cd themes/pacman
-git pull
-```
-**please backup your `_config.yml` file before update.** 
-##Configuration
+[主题演示](http://simpleyyt.github.io/jekyll-jacman/) | [Yitao's Blog](http://simpleyyt.github.io)
 
-Modify settings in  `/themes/pacman/_config.yml`.
+[如何使用 Jacman 主题](http://simpleyyt.github.io/jekyll-jacman/jekyll/2015/09/20/how-to-use-jacman/)
 
-```
-##### Menu
-menu:
-  Home: /
-  Archives: /archives
-## you can create `tags` and `categories` folders in `../source`.
-## And create a `index.md` file in each of them.
-## set `front-matter`as
-## layout: tags (or categories)
-## title: tags (or categories)
-## ---
+##功能
+- **菜单 menu**  
+ 主导航菜单
+- **控件 widget**  
+ 侧边栏的控件。包括：分类、标签、RSS、友情链接、微博秀。
+- **图片相关 Image**  
+ 设置网站图标、网站logo、作者头像、博客顶部大图等。还提供了多种图片样式`img-logo`,`img-topic`,`img-center`等。
+- **首页模式 index**  
+ 主题提供了两种首页展示模式。
+- **作者 author**  
+ 作者信息，主要用于展示网站右下角的社交网络链接。包括：微博、豆瓣、知乎、邮箱、GitHub、StackOverflow、Twitter、Facebook、Linkedin、Google+。
+- **目录 toc**  
+ 在文章中和侧边栏可以显示目录。
+- **评论 comments**  
+ 支持 [多说](http://duoshuo.com/) & [disqus](https://disqus.com/) 评论。
+- **分享 jiathis**  
+ 启用 内建分享工具 或 [加网](http://www.jiathis.com/) 分享系统。
+- **网站统计 Analytiscs**  
+ 支持 [谷歌统计](http://www.google.com/analytics/) & [百度统计](http://tongji.baidu.com/) & [CNZZ站长统计](http://www.cnzz.com/)。
+- **Search**  
+ 支持 [谷歌自定义搜索](https://www.google.com/cse/ ) & [百度站内搜索](http://zn.baidu.com/)  &[微搜索](http://tinysou.com/)。
+- **totop**  
+ 回到顶部。
+- **rss**  
+ RSS 订阅链接。
+- **fancybox**  
+ 图片查看的 [Fancybox](http://fancyapps.com/fancybox/) 工具。
+- **自定义主题颜色**
+ 在`_config.yaml`中就可以修改主题的颜色，而不用去找那些奇怪的 stylus 文件。
+- **其他**
+ 你可以设置侧边栏在博文页面中不显示。
 
-#### Widgets
-widgets: 
-- category
-- tag
-- rss
-## provide six widgets:category,tag,rss,archive,tagcloud,links.
-## modify links in `/layout/_widget/links.ejs`.
-
-#### RSS
-rss: ## RSS address.
-
-#### Image
-imglogo:
-  enable: true             ## display image logo true/false.
-  src: img/logo.svg        ## `.svg` and `.png` are recommended,please put image into the theme folder `/pacman/source/img`.
-favicon: img/favicon.ico   ## size:16px*16px,`.ico` is recommended,please put image into the theme folder `/pacman/source/img`.     
-apple_icon: img/pacman.jpg ## size:64px*64px,please put image into the theme folder `/pacman/source/img`.
-
-#### Author Avatar Picture
-author_img_enable: true ## display author avatar picture
-dataURI: false
-## if the picture's format is dataURI please set the value to true,otherwise set the value to false.
-## convert an image into base 64 data URIs http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ .
-author_img_data: ''
-## paste the dataURI in ONE LINE and included it by ''.
-author_img: img/author.jpg ## size:220px*220px.
-## if the picture's format is `.png` or `.jpg`  instead of dataURI,you should set the `dataURI` value to false.
-
-#### Font
-ShowCustomFont: true  
-## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/pacman/source/css`.
-
-#### Toc
-toc:
-  article: true   ## show contents in article.
-  aside: true     ## show contents in aside.
-## you can set both of the value to true of neither of them.
-## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
-
-#### Fancybox
-fancybox: false 
-## if you use gallery post or want use fancybox please set the value to true.
-## if you want use fancybox in ANY post please copy the file `fancybox.js`.
-## in theme folder `/pacman/scripts` to your hexo blog folder `../scritps`.
-
-#### Author information
-author:
-  google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
-  intro_line1: "" ## eg: "Hello ,I'm Larry Page in Google."
-  intro_line2: "" ## eg: "This is my blog,believe it or not."
-  weibo:      ## e.g. 436062867 for http://weibo.com/436062867
-  twitter:    ## e.g. yangjiansky for https://twitter.com/yangjiansky
-  github:     ## e.g. A-limon for https://github.com/A-limon
-  facebook:   ## e.g. yangjian for https://favebook.com/yangjian
-  tsina:      ## e.g. 1664838973  Your weibo ID,It will be used in share button.
-
-#### Comment
-duoshuo: 
-  enable: false  ## duoshuo.com
-  short_name:    ## duoshuo short name.
-
-#### Share button
-jiathis:
-  enable: false ## if you use jiathis as your share tool,the built-in share tool won't be display.
-  id:    ## e.g. 1501277 your jiathis ID. 
-  tsina: ## e.g. 1664838973 Your weibo id,It will be used in share button.
-
-#### Analytics
-google_analytics:
-  enable: false
-  id:   ## e.g. UA-1766729-8 your google analytics ID.
-  site: ## e.g. yangjian.me your google analytics site or set the value as auto.
-## You MUST upgrade to Universal Analytics first!
-## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
-
-#### Custom Search
-google_cse: 
-  enable: false
-  cx:  ## e.g. 000561263943549425496:mrzrm0gr4kg your Custom Search ID.
-## https://www.google.com/cse/
-```
-
-
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/A-limon/pacman/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+##协议
+[MIT](/LICENSE)
