@@ -9,28 +9,27 @@ markdown: kramdown
   
 # The title and tagline is showed on homepage
 #
-title :  Simpleyyt 
-tagline: Yitao's Blog
+title :  skiluo 
+tagline: ljh's Blog
 
 gems: [jekyll-paginate]
 
 # Information about author
 #
 author :
-  name : Yitao Yao
+  name : Jiahua Li
   
 # Information for contacts showed at on the footer
 #
 contact :
-  e-mail : mailto:simpleyyt@gmail.com
-  Github : https://github.com/Simpleyyt
-  WeiBo : http://www.weibo.com/u/1836017133
-  Google+ : https://plus.google.com/103860633659538888207?rel=author
+  e-mail : mailto:651420230@qq.com
+  Github : https://github.com/skiluo
+  WeiBo : http://weibo.com/u/2400410660
   
 # Links showed on the footer
 #
 links :
-  Yitao's Blog : http://simpleyyt.github.io/
+  ljh's Blog : http://skiluo.github.io/
 
 # The search engine. Only support google custom search engine.
 #
@@ -129,15 +128,15 @@ JB :
   comments :
     provider : duoshuo
     duoshuo :
-      short_name : simpleyyt
+      short_name : skiluo
     disqus :
-      short_name : simpleyyt
+      short_name : skiluo
     livefyre :
       site_id : 123
     intensedebate :
       account : 123abc
     facebook :
-      appid : 123
+      appid : 
       num_posts: 5
       width: 580
       colorscheme: light

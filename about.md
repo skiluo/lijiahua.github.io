@@ -4,7 +4,7 @@ title: About Me
 header: About Me
 group: navigation
 ---
- * **Name:** Yitao Yao
- * **Email:** [simpleyyt@gmail.com](mailto:simpleyyt@gmail.com)
- * **WeiBo:** [摇一摇SimpleLife](http://www.weibo.com/u/1836017133)
- * **Github:** [Simpleyyt](https://github.com/Simpleyyt)
+ * **Name:** Jiahua Li
+ * **Email:** [skiluo@qq.com](651420230@qq.com)
+ * **WeiBo:** [ftd落花生](http://weibo.com/u/2400410660)
+ * **Github:** [skiluo](https://github.com/skiluo)
