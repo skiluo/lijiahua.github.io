@@ -110,14 +110,6 @@
 				  
 				
 			 
-				
-			 
-				
-			 
-				
-			 
-				
-			 
 			
 			
 		</ul>
@@ -163,89 +155,15 @@
 				</h1>
 				<span class="the-article">
 				<h2 id="dfs">深度优先搜索(DFS)</h2>
-<blockquote>
-  <p>ZJU 1711</p>
-</blockquote>
+<ul>
+  <li><a href="https://github.com/skiluo/acm/blob/master/zju/1711.cpp">ZJU 1711</a></li>
+  <li><a href="https://github.com/skiluo/acm/blob/master/zju/1457.cpp">ZJU 1457</a></li>
+</ul>
 
-<pre><code class="language-c">#include &lt;iostream&gt;
-#include &lt;cstdio&gt;
-#include &lt;cstdlib&gt;
-#include &lt;cmath&gt;
-#include &lt;algorithm&gt;
-#include &lt;iomanip&gt;
-#include &lt;cstring&gt;
-#include &lt;queue&gt;
-#include &lt;climits&gt;
-#include &lt;queue&gt;
-#include &lt;map&gt;
-#include &lt;set&gt;
-
-using namespace std;
-
-int s[15];
-int t, n, prevc=0;
-vector&lt;int&gt; stack;
-vector&lt;vector&lt;int&gt; &gt; answer;
-
-void dfs(int pos, int sum){
-    if(sum &lt; 0){
-        return;
-    }
-    if(sum == 0){
-        answer.push_back(stack);
-        return;
-    }
-    for(int i=pos+1; i&lt;n; i++){
-        if(s[i] == prevc){
-            continue;
-        }
-        stack.push_back(s[i]);
-        dfs(i, sum-s[i]);
-        prevc = s[i];
-        stack.pop_back();
-    }
-}
-
-void pout(vector&lt;int&gt; a){
-    for(int i=0; i&lt;a.size()-1; i++){
-        cout&lt;&lt;a[i]&lt;&lt;"+";
-    }
-    cout&lt;&lt;a.back()&lt;&lt;endl;
-}
-
-int main(){
-    #ifndef ONLINE_JUDGE
-    freopen("/Users/skiluo/workspace2/test/test/in.txt", "r", stdin);
-    #endif
-    while(cin&gt;&gt;t&gt;&gt;n){
-        if(n == 0){
-            break;
-        }
-        cout&lt;&lt;"Sums of "&lt;&lt;t&lt;&lt;":"&lt;&lt;endl;
-        for(int i=0; i&lt;n; i++){
-            cin&gt;&gt;s[i];
-        }
-        dfs(-1, t);
-        if(answer.size() == 0){
-            cout&lt;&lt;"NONE"&lt;&lt;endl;
-        }
-        else{
-            vector&lt;int&gt; prev = answer[0];
-            pout(prev);
-            for(int i=1; i&lt;answer.size(); i++){
-                prev = answer[i];
-                pout(prev);
-            }
-            
-        }
-        answer.clear();
-        stack.clear();
-        memset(s, 0, sizeof(s));
-        prevc=0;
-    }
-}
-</code></pre>
-
+<h2 id="bfs">广度优先搜索(BFS)</h2>
+<ul>
+  <li><a href="https://github.com/skiluo/acm/blob/master/zju/1649.cpp">ZJU 1649</a></li>
+</ul>
 
 				</span>
 				<div class="journal-date">Published 25 April 2016</div>
@@ -318,50 +236,6 @@ var duoshuoQuery = {short_name:"skiluo"};
 
   
      
-    	<li><a href="/categories.html#android-ref">
-    		android <span>1</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#Embedded-ref">
-    		Embedded <span>1</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#Linux-ref">
-    		Linux <span>2</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#daily-ref">
-    		daily <span>4</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#embedded-ref">
-    		embedded <span>1</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#vocore-ref">
-    		vocore <span>3</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#openwrt-ref">
-    		openwrt <span>3</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#linux-ref">
-    		linux <span>1</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#markdown-ref">
-    		markdown <span>1</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#intern-ref">
-    		intern <span>1</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#Network-ref">
-    		Network <span>1</span>
-    	</a></li>
-     
     	<li><a href="/categories.html#acm-ref">
     		acm <span>1</span>
     	</a></li>
@@ -432,14 +306,6 @@ var duoshuoQuery = {short_name:"skiluo"};
       	<li><a href="/tags">Tags</a></li>
       	
       
-    
-  
-    
-  
-    
-  
-    
-  
     
   
 
