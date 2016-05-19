@@ -4,7 +4,7 @@
  <title>skiluo</title>
  <link href="/" rel="self"/>
  <link href=""/>
- <updated>2016-05-20T03:31:27+08:00</updated>
+ <updated>2016-05-20T03:38:58+08:00</updated>
  <id></id>
  <author>
    <name>Jiahua Li</name>
@@ -47,78 +47,81 @@
 &lt;h3 id=&quot;line-breaks&quot;&gt;Line Breaks&lt;/h3&gt;
 &lt;p&gt;To force a line break, put two spaces and a newline (return) at the end of the line.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;These lines
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;These lines
 won&#39;t break
 
 These lines  
 will break
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;strong-and-emphasize&quot;&gt;Strong and Emphasize&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Strong&lt;/strong&gt;: &lt;code&gt;**Strong**&lt;/code&gt; or &lt;code&gt;__Strong__&lt;/code&gt; (Command-B)&lt;br /&gt;
-&lt;em&gt;Emphasize&lt;/em&gt;: &lt;code&gt;*Emphasize*&lt;/code&gt; or &lt;code&gt;_Emphasize_&lt;/code&gt;&lt;sup id=&quot;fnref:emphasize&quot;&gt;&lt;a href=&quot;#fn:emphasize&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; (Command-I)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strong&lt;/strong&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;**Strong**&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;__Strong__&lt;/code&gt; (Command-B)&lt;br /&gt;
+&lt;em&gt;Emphasize&lt;/em&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;*Emphasize*&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;_Emphasize_&lt;/code&gt;&lt;sup id=&quot;fnref:emphasize&quot;&gt;&lt;a href=&quot;#fn:emphasize&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; (Command-I)&lt;/p&gt;
 
 &lt;h3 id=&quot;headers-like-this-one&quot;&gt;Headers (like this one!)&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;Header 1
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Header 1
 ========
 
 Header 2
 --------
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;or&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;# Header 1
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Header 1
 ## Header 2
 ### Header 3
 #### Header 4
 ##### Header 5
 ###### Header 6
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;links-and-email&quot;&gt;Links and Email&lt;/h3&gt;
 &lt;p&gt;#### Inline
 Just put angle brackets around an email and it becomes clickable: &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#117;&amp;#114;&amp;#097;&amp;#110;&amp;#117;&amp;#115;&amp;#106;&amp;#114;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#117;&amp;#114;&amp;#097;&amp;#110;&amp;#117;&amp;#115;&amp;#106;&amp;#114;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt;&lt;br /&gt;
-&lt;code&gt;&amp;lt;uranusjr@gmail.com&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;uranusjr@gmail.com&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Same thing with urls: &lt;a href=&quot;http://macdown.uranusjr.com&quot;&gt;http://macdown.uranusjr.com&lt;/a&gt;&lt;br /&gt;
 ` &lt;a href=&quot;http://macdown.uranusjr.com&quot;&gt;http://macdown.uranusjr.com&lt;/a&gt;`&lt;/p&gt;
 
 &lt;p&gt;Perhaps you want to some link text like this: &lt;a href=&quot;http://macdown.uranusjr.com&quot; title=&quot;Title&quot;&gt;Macdown Website&lt;/a&gt;&lt;br /&gt;
-&lt;code&gt;[Macdown Website](http://macdown.uranusjr.com &quot;Title&quot;)&lt;/code&gt; (The title is optional)&lt;/p&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;[Macdown Website](http://macdown.uranusjr.com &quot;Title&quot;)&lt;/code&gt; (The title is optional)&lt;/p&gt;
 
 &lt;h4 id=&quot;reference-style&quot;&gt;Reference style&lt;/h4&gt;
 &lt;p&gt;Sometimes it looks too messy to include big long urls inline, or you want to keep all your urls together.&lt;/p&gt;
 
-&lt;p&gt;Make &lt;a href=&quot;http://macdown.uranusjr.com&quot; title=&quot;Title&quot;&gt;a link&lt;/a&gt; &lt;code&gt;[a link][arbitrary_id]&lt;/code&gt; then on it’s own line anywhere else in the file:&lt;br /&gt;
-&lt;code&gt;[arbitrary_id]: http://macdown.uranusjr.com &quot;Title&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Make &lt;a href=&quot;http://macdown.uranusjr.com&quot; title=&quot;Title&quot;&gt;a link&lt;/a&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;[a link][arbitrary_id]&lt;/code&gt; then on it’s own line anywhere else in the file:&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;[arbitrary_id]: http://macdown.uranusjr.com &quot;Title&quot;&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;If the link text itself would make a good id, you can link &lt;a href=&quot;http://macdown.uranusjr.com&quot;&gt;like this&lt;/a&gt; &lt;code&gt;[like this][]&lt;/code&gt;, then on it’s own line anywhere else in the file:&lt;br /&gt;
-&lt;code&gt;[like this]: http://macdown.uranusjr.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If the link text itself would make a good id, you can link &lt;a href=&quot;http://macdown.uranusjr.com&quot;&gt;like this&lt;/a&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;[like this][]&lt;/code&gt;, then on it’s own line anywhere else in the file:&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;[like this]: http://macdown.uranusjr.com&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;images&quot;&gt;Images&lt;/h3&gt;
 &lt;p&gt;#### Inline
-&lt;code&gt;![Alt Image Text](path/or/url/to.jpg &quot;Optional Title&quot;)&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;![Alt Image Text](path/or/url/to.jpg &quot;Optional Title&quot;)&lt;/code&gt;
 #### Reference style
-&lt;code&gt;![Alt Image Text][image-id]&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;![Alt Image Text][image-id]&lt;/code&gt;&lt;br /&gt;
 on it’s own line elsewhere:&lt;br /&gt;
-&lt;code&gt;[image-id]: path/or/url/to.jpg &quot;Optional Title&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;[image-id]: path/or/url/to.jpg &quot;Optional Title&quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;lists&quot;&gt;Lists&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Lists must be preceded by a blank line (or block element)&lt;/li&gt;
-  &lt;li&gt;Unordered lists start each item with a &lt;code&gt;*&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;-&lt;/code&gt; works too
+  &lt;li&gt;Unordered lists start each item with a &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; works too
     &lt;ul&gt;
       &lt;li&gt;Indent a level to make a nested list
         &lt;ol&gt;
           &lt;li&gt;Ordered lists are supported.&lt;/li&gt;
-          &lt;li&gt;Start each item (number-period-space) like &lt;code&gt;1. &lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;Start each item (number-period-space) like &lt;code class=&quot;highlighter-rouge&quot;&gt;1. &lt;/code&gt;&lt;/li&gt;
           &lt;li&gt;It doesn’t matter what number you use, I will render them sequentially&lt;/li&gt;
-          &lt;li&gt;So you might want to start each line with &lt;code&gt;1.&lt;/code&gt; and let me sort it out&lt;/li&gt;
+          &lt;li&gt;So you might want to start each line with &lt;code class=&quot;highlighter-rouge&quot;&gt;1.&lt;/code&gt; and let me sort it out&lt;/li&gt;
         &lt;/ol&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
@@ -127,7 +130,7 @@ on it’s own line elsewhere:&lt;br /&gt;
 
 &lt;p&gt;Here is the code:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
 * Lists must be preceded by a blank line (or block element)
 * Unordered lists start each item with a `*`
 - `-` works too
@@ -141,8 +144,8 @@ on it’s own line elsewhere:&lt;br /&gt;
 &lt;h3 id=&quot;block-quote&quot;&gt;Block Quote&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Angle brackets &lt;code&gt;&amp;gt;&lt;/code&gt; are used for block quotes.&lt;br /&gt;
-Technically not every line needs to start with a &lt;code&gt;&amp;gt;&lt;/code&gt; as long as
+  &lt;p&gt;Angle brackets &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; are used for block quotes.&lt;br /&gt;
+Technically not every line needs to start with a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; as long as
 there are no empty lines between paragraphs.&lt;br /&gt;
 Looks kinda ugly though.
 &amp;gt; Block quotes can be nested.&lt;br /&gt;
@@ -159,7 +162,7 @@ Looks kinda ugly though.
 
 &lt;p&gt;Here is the code:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
 &amp;gt; Angle brackets `&amp;gt;` are used for block quotes.  
 Technically not every line needs to start with a `&amp;gt;` as long as
 there are no empty lines between paragraphs.  
@@ -175,25 +178,26 @@ there are no empty lines between paragraphs.
 &lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;inline-code&quot;&gt;Inline Code&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;Inline code&lt;/code&gt; is indicated by surrounding it with backticks:&lt;br /&gt;
-&lt;code&gt;`Inline code`&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Inline code&lt;/code&gt; is indicated by surrounding it with backticks:&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;`Inline code`&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;If your &lt;code&gt;code has `backticks`&lt;/code&gt; that need to be displayed, you can use double backticks:&lt;br /&gt;
-&lt;code&gt;``Code with `backticks` ``&lt;/code&gt;  (mind the spaces preceding the final set of backticks)&lt;/p&gt;
+&lt;p&gt;If your &lt;code class=&quot;highlighter-rouge&quot;&gt;code has `backticks`&lt;/code&gt; that need to be displayed, you can use double backticks:&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;``Code with `backticks` ``&lt;/code&gt;  (mind the spaces preceding the final set of backticks)&lt;/p&gt;
 
 &lt;h3 id=&quot;block-code&quot;&gt;Block Code&lt;/h3&gt;
 &lt;p&gt;If you indent at least four spaces or one tab, I’ll display a code block.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;print(&#39;This is a code block&#39;)
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print(&#39;This is a code block&#39;)
 print(&#39;The block must be preceded by a blank line&#39;)
 print(&#39;Then indent at least 4 spaces or 1 tab&#39;)
 	print(&#39;Nesting does nothing. Your code is displayed Literally&#39;)
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;I also know how to do something called &lt;a href=&quot;#fenced-code-block&quot;&gt;Fenced Code Blocks&lt;/a&gt; which I will tell you about later.&lt;/p&gt;
 
 &lt;h3 id=&quot;horizontal-rules&quot;&gt;Horizontal Rules&lt;/h3&gt;
-&lt;p&gt;If you type three asterisks &lt;code&gt;***&lt;/code&gt; or three dashes &lt;code&gt;---&lt;/code&gt; on a line, I’ll display a horizontal rule:&lt;/p&gt;
+&lt;p&gt;If you type three asterisks &lt;code class=&quot;highlighter-rouge&quot;&gt;***&lt;/code&gt; or three dashes &lt;code class=&quot;highlighter-rouge&quot;&gt;---&lt;/code&gt; on a line, I’ll display a horizontal rule:&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -202,7 +206,7 @@ print(&#39;Then indent at least 4 spaces or 1 tab&#39;)
 &lt;img src=&quot;http://d.pr/i/RQEi+&quot; alt=&quot;Markdown preferences pane&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;document-formatting&quot;&gt;Document Formatting&lt;/h3&gt;
-&lt;p&gt;The &lt;strong&gt;&lt;em&gt;Smartypants&lt;/em&gt;&lt;/strong&gt; extension automatically transforms straight quotes (&lt;code&gt;&quot;&lt;/code&gt; and &lt;code&gt;&#39;&lt;/code&gt;) in your text into typographer’s quotes (&lt;code&gt;“&lt;/code&gt;, &lt;code&gt;”&lt;/code&gt;, &lt;code&gt;‘&lt;/code&gt;, and &lt;code&gt;’&lt;/code&gt;) according to the context. Very useful if you’re a typography freak like I am. Quote and Smartypants are syntactically incompatible. If both are enabled, Quote takes precedence.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;&lt;em&gt;Smartypants&lt;/em&gt;&lt;/strong&gt; extension automatically transforms straight quotes (&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&#39;&lt;/code&gt;) in your text into typographer’s quotes (&lt;code class=&quot;highlighter-rouge&quot;&gt;“&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;”&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;‘&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;’&lt;/code&gt;) according to the context. Very useful if you’re a typography freak like I am. Quote and Smartypants are syntactically incompatible. If both are enabled, Quote takes precedence.&lt;/p&gt;
 
 &lt;h3 id=&quot;block-formatting&quot;&gt;Block Formatting&lt;/h3&gt;
 
@@ -258,20 +262,21 @@ print(&#39;Then indent at least 4 spaces or 1 tab&#39;)
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;The left- and right-most pipes (&lt;code&gt;|&lt;/code&gt;) are only aesthetic, and can be omitted. The spaces don’t matter, either. Alignment depends solely on &lt;code&gt;:&lt;/code&gt; marks.&lt;/p&gt;
+&lt;p&gt;The left- and right-most pipes (&lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt;) are only aesthetic, and can be omitted. The spaces don’t matter, either. Alignment depends solely on &lt;code class=&quot;highlighter-rouge&quot;&gt;:&lt;/code&gt; marks.&lt;/p&gt;
 
 &lt;h4 id=&quot;a-namefenced-code-blockfenced-code-blocka&quot;&gt;&lt;a name=&quot;fenced-code-block&quot;&gt;Fenced Code Block&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;This is a fenced code block:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
 print (&#39;Hello world!)&#39;
 &lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;You can also use waves (&lt;code&gt;~&lt;/code&gt;) instead of back ticks (&lt;code&gt;`&lt;/code&gt;):&lt;/p&gt;
+&lt;p&gt;You can also use waves (&lt;code class=&quot;highlighter-rouge&quot;&gt;~&lt;/code&gt;) instead of back ticks (&lt;code class=&quot;highlighter-rouge&quot;&gt;`&lt;/code&gt;):&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;print(&#39;Hello world!&#39;)
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print(&#39;Hello world!&#39;)
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;You can add an optional language ID at the end of the first line. The language ID will only be used to highlight the code inside if you tick the &lt;strong&gt;&lt;em&gt;Enable highlighting in code blocks&lt;/em&gt;&lt;/strong&gt; option. This is what happens if you enable it:&lt;/p&gt;
 
@@ -372,7 +377,7 @@ print (&#39;Hello world!)&#39;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;jekyll-front-matter&quot;&gt;Jekyll front-matter&lt;/h3&gt;
-&lt;p&gt;If you like, I can display Jekyll front-matter in a nice table. Just make sure you put the front-matter at the very beginning of the file, and fence it with &lt;code&gt;---&lt;/code&gt;. For example:&lt;/p&gt;
+&lt;p&gt;If you like, I can display Jekyll front-matter in a nice table. Just make sure you put the front-matter at the very beginning of the file, and fence it with &lt;code class=&quot;highlighter-rouge&quot;&gt;---&lt;/code&gt;. For example:&lt;/p&gt;
 
 &lt;h2 id=&quot;section&quot;&gt;```&lt;/h2&gt;
 &lt;p&gt;title: “Macdown is my friend”
@@ -388,7 +393,7 @@ date: 2014-06-06 20:00:00
 &lt;p&gt;This is where I keep preferences related to application behavior.&lt;br /&gt;
 &lt;img src=&quot;http://d.pr/i/rvwu+&quot; alt=&quot;General preferences pane&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The General Preferences Pane allows you to tell me how you want me to behave. For example, do you want me to make sure there is a document open when I launch? You can also tell me if I should constantly update the preview window as you type, or wait for you to hit &lt;code&gt;command-R&lt;/code&gt; instead. Maybe you prefer your editor window on the right? Or to see the word-count as you type. This is also the place to tell me if you are interested in pre-releases of me, or just want to stick to better-tested official releases.&lt;/p&gt;
+&lt;p&gt;The General Preferences Pane allows you to tell me how you want me to behave. For example, do you want me to make sure there is a document open when I launch? You can also tell me if I should constantly update the preview window as you type, or wait for you to hit &lt;code class=&quot;highlighter-rouge&quot;&gt;command-R&lt;/code&gt; instead. Maybe you prefer your editor window on the right? Or to see the word-count as you type. This is also the place to tell me if you are interested in pre-releases of me, or just want to stick to better-tested official releases.&lt;/p&gt;
 
 &lt;h2 id=&quot;a-nameeditor-paneathe-editor-preference-pane&quot;&gt;&lt;a name=&quot;editor-pane&quot;&gt;&lt;/a&gt;The Editor Preference Pane&lt;/h2&gt;
 &lt;p&gt;This is where I keep preferences related to the behavior and styling of the editing window.&lt;br /&gt;
@@ -398,7 +403,7 @@ date: 2014-06-06 20:00:00
 
 &lt;p&gt;My editor provides syntax highlighting. You can edit the base font and the coloring/sizing theme. I provided some default themes (courtesy of &lt;a href=&quot;http://mouapp.com&quot;&gt;Mou&lt;/a&gt;’s creator, Chen Luo) if you don’t know where to start.&lt;/p&gt;
 
-&lt;p&gt;You can also edit, or even add new themes if you want to! Just click the &lt;strong&gt;&lt;em&gt;Reveal&lt;/em&gt;&lt;/strong&gt; button, and start moving things around. Remember to use the correct file extension (&lt;code&gt;.styles&lt;/code&gt;), though. I’m picky about that.&lt;/p&gt;
+&lt;p&gt;You can also edit, or even add new themes if you want to! Just click the &lt;strong&gt;&lt;em&gt;Reveal&lt;/em&gt;&lt;/strong&gt; button, and start moving things around. Remember to use the correct file extension (&lt;code class=&quot;highlighter-rouge&quot;&gt;.styles&lt;/code&gt;), though. I’m picky about that.&lt;/p&gt;
 
 &lt;p&gt;I offer auto-completion and other functions to ease your editing experience. If you don’t like it, however, you can turn them off.&lt;/p&gt;
 
@@ -411,16 +416,16 @@ date: 2014-06-06 20:00:00
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:emphasize&quot;&gt;
-      &lt;p&gt;If &lt;strong&gt;Underlines&lt;/strong&gt; is turned on, &lt;code&gt;_this notation_&lt;/code&gt; will render as underlined instead of emphasized &lt;a href=&quot;#fnref:emphasize&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;If &lt;strong&gt;Underlines&lt;/strong&gt; is turned on, &lt;code class=&quot;highlighter-rouge&quot;&gt;_this notation_&lt;/code&gt; will render as underlined instead of emphasized &lt;a href=&quot;#fnref:emphasize&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:under&quot;&gt;
-      &lt;p&gt;If &lt;strong&gt;Underline&lt;/strong&gt; is disabled &lt;code&gt;_this_&lt;/code&gt; will be rendered as &lt;em&gt;emphasized&lt;/em&gt; instead of being underlined. &lt;a href=&quot;#fnref:under&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;If &lt;strong&gt;Underline&lt;/strong&gt; is disabled &lt;code class=&quot;highlighter-rouge&quot;&gt;_this_&lt;/code&gt; will be rendered as &lt;em&gt;emphasized&lt;/em&gt; instead of being underlined. &lt;a href=&quot;#fnref:under&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:quote&quot;&gt;
-      &lt;p&gt;&lt;strong&gt;Quote&lt;/strong&gt; replaces literal &lt;code&gt;&quot;&lt;/code&gt; characters with html &lt;code&gt;&amp;lt;q&amp;gt;&lt;/code&gt; tags. &lt;strong&gt;Quote&lt;/strong&gt; and &lt;strong&gt;Smartypants&lt;/strong&gt; are syntactically incompatible. If both are enabled, &lt;strong&gt;Quote&lt;/strong&gt; takes precedence. Note that &lt;strong&gt;Quote&lt;/strong&gt; is different from &lt;em&gt;blockquote&lt;/em&gt;, which is part of standard Markdown. &lt;a href=&quot;#fnref:quote&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Quote&lt;/strong&gt; replaces literal &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;&lt;/code&gt; characters with html &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;q&amp;gt;&lt;/code&gt; tags. &lt;strong&gt;Quote&lt;/strong&gt; and &lt;strong&gt;Smartypants&lt;/strong&gt; are syntactically incompatible. If both are enabled, &lt;strong&gt;Quote&lt;/strong&gt; takes precedence. Note that &lt;strong&gt;Quote&lt;/strong&gt; is different from &lt;em&gt;blockquote&lt;/em&gt;, which is part of standard Markdown. &lt;a href=&quot;#fnref:quote&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:4&quot;&gt;
-      &lt;p&gt;You don’t have to use a number. Arbitrary things like &lt;code&gt;[^footy note4]&lt;/code&gt; and &lt;code&gt;[^footy note4]:&lt;/code&gt; will also work. But they will &lt;em&gt;render&lt;/em&gt; as numbered footnotes. Also, no need to keep your footnotes in order, I will sort out the order for you so they appear in the same order they were referenced in the text body. You can even keep some footnotes near where you referenced them, and collect others at the bottom of the file in the traditional place for footnotes. &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;You don’t have to use a number. Arbitrary things like &lt;code class=&quot;highlighter-rouge&quot;&gt;[^footy note4]&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;[^footy note4]:&lt;/code&gt; will also work. But they will &lt;em&gt;render&lt;/em&gt; as numbered footnotes. Also, no need to keep your footnotes in order, I will sort out the order for you so they appear in the same order they were referenced in the text body. You can even keep some footnotes near where you referenced them, and collect others at the bottom of the file in the traditional place for footnotes. &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:math&quot;&gt;
       &lt;p&gt;Internet connection required. &lt;a href=&quot;#fnref:math&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
@@ -439,12 +444,13 @@ date: 2014-06-06 20:00:00
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skiluo/acm/blob/master/zju/1711.cpp&quot;&gt;ZJU 1711&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skiluo/acm/blob/master/zju/1457.cpp&quot;&gt;ZJU 1457&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;&lt;a href=&quot;https://github.com/skiluo/acm/blob/master/zju/1457.cpp&quot;&gt;codeforces 662B&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;&lt;a href=&quot;https://github.com/skiluo/acm/blob/master/codeforces/662b.cpp&quot;&gt;codeforces 662B&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
   1. 纪录每个点都有哪些边，对应哪个点。
-  2. 假设结果为颜色c，假设一个点a没变色（0），计算这个点周围所有边变成c需要变色的点数；若点a变色（1），计算这个点周围所有边变成c需要变色的点数，取变色点数较少的假设，纪录a及a周边店的状态；
+  2. 假设结果为颜色c，假设一个点a没变色（0），计算这个点周围所有边变成c需要变色的点数；若点a变色（1），
+  计算这个点周围所有边变成c需要变色的点数，取变色点数较少的假设，纪录a及a周边点的状态；
   3. 遍历所有的点
 &lt;/code&gt;&lt;/p&gt;
 

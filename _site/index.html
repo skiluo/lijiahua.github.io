@@ -188,78 +188,81 @@
 <h3 id="line-breaks">Line Breaks</h3>
 <p>To force a line break, put two spaces and a newline (return) at the end of the line.</p>
 
-<pre><code>These lines
+<div class="highlighter-rouge"><pre class="highlight"><code>These lines
 won't break
 
 These lines  
 will break
 </code></pre>
+</div>
 
 <h3 id="strong-and-emphasize">Strong and Emphasize</h3>
 
-<p><strong>Strong</strong>: <code>**Strong**</code> or <code>__Strong__</code> (Command-B)<br />
-<em>Emphasize</em>: <code>*Emphasize*</code> or <code>_Emphasize_</code><sup id="fnref:emphasize"><a href="#fn:emphasize" class="footnote">1</a></sup> (Command-I)</p>
+<p><strong>Strong</strong>: <code class="highlighter-rouge">**Strong**</code> or <code class="highlighter-rouge">__Strong__</code> (Command-B)<br />
+<em>Emphasize</em>: <code class="highlighter-rouge">*Emphasize*</code> or <code class="highlighter-rouge">_Emphasize_</code><sup id="fnref:emphasize"><a href="#fn:emphasize" class="footnote">1</a></sup> (Command-I)</p>
 
 <h3 id="headers-like-this-one">Headers (like this one!)</h3>
 
-<pre><code>Header 1
+<div class="highlighter-rouge"><pre class="highlight"><code>Header 1
 ========
 
 Header 2
 --------
 </code></pre>
+</div>
 
 <p>or</p>
 
-<pre><code># Header 1
+<div class="highlighter-rouge"><pre class="highlight"><code># Header 1
 ## Header 2
 ### Header 3
 #### Header 4
 ##### Header 5
 ###### Header 6
 </code></pre>
+</div>
 
 <h3 id="links-and-email">Links and Email</h3>
 <p>#### Inline
 Just put angle brackets around an email and it becomes clickable: <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#117;&#114;&#097;&#110;&#117;&#115;&#106;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#117;&#114;&#097;&#110;&#117;&#115;&#106;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a><br />
-<code>&lt;uranusjr@gmail.com&gt;</code></p>
+<code class="highlighter-rouge">&lt;uranusjr@gmail.com&gt;</code></p>
 
 <p>Same thing with urls: <a href="http://macdown.uranusjr.com">http://macdown.uranusjr.com</a><br />
 ` <a href="http://macdown.uranusjr.com">http://macdown.uranusjr.com</a>`</p>
 
 <p>Perhaps you want to some link text like this: <a href="http://macdown.uranusjr.com" title="Title">Macdown Website</a><br />
-<code>[Macdown Website](http://macdown.uranusjr.com "Title")</code> (The title is optional)</p>
+<code class="highlighter-rouge">[Macdown Website](http://macdown.uranusjr.com "Title")</code> (The title is optional)</p>
 
 <h4 id="reference-style">Reference style</h4>
 <p>Sometimes it looks too messy to include big long urls inline, or you want to keep all your urls together.</p>
 
-<p>Make <a href="http://macdown.uranusjr.com" title="Title">a link</a> <code>[a link][arbitrary_id]</code> then on it’s own line anywhere else in the file:<br />
-<code>[arbitrary_id]: http://macdown.uranusjr.com "Title"</code></p>
+<p>Make <a href="http://macdown.uranusjr.com" title="Title">a link</a> <code class="highlighter-rouge">[a link][arbitrary_id]</code> then on it’s own line anywhere else in the file:<br />
+<code class="highlighter-rouge">[arbitrary_id]: http://macdown.uranusjr.com "Title"</code></p>
 
-<p>If the link text itself would make a good id, you can link <a href="http://macdown.uranusjr.com">like this</a> <code>[like this][]</code>, then on it’s own line anywhere else in the file:<br />
-<code>[like this]: http://macdown.uranusjr.com</code></p>
+<p>If the link text itself would make a good id, you can link <a href="http://macdown.uranusjr.com">like this</a> <code class="highlighter-rouge">[like this][]</code>, then on it’s own line anywhere else in the file:<br />
+<code class="highlighter-rouge">[like this]: http://macdown.uranusjr.com</code></p>
 
 <h3 id="images">Images</h3>
 <p>#### Inline
-<code>![Alt Image Text](path/or/url/to.jpg "Optional Title")</code>
+<code class="highlighter-rouge">![Alt Image Text](path/or/url/to.jpg "Optional Title")</code>
 #### Reference style
-<code>![Alt Image Text][image-id]</code><br />
+<code class="highlighter-rouge">![Alt Image Text][image-id]</code><br />
 on it’s own line elsewhere:<br />
-<code>[image-id]: path/or/url/to.jpg "Optional Title"</code></p>
+<code class="highlighter-rouge">[image-id]: path/or/url/to.jpg "Optional Title"</code></p>
 
 <h3 id="lists">Lists</h3>
 
 <ul>
   <li>Lists must be preceded by a blank line (or block element)</li>
-  <li>Unordered lists start each item with a <code>*</code></li>
-  <li><code>-</code> works too
+  <li>Unordered lists start each item with a <code class="highlighter-rouge">*</code></li>
+  <li><code class="highlighter-rouge">-</code> works too
     <ul>
       <li>Indent a level to make a nested list
         <ol>
           <li>Ordered lists are supported.</li>
-          <li>Start each item (number-period-space) like <code>1. </code></li>
+          <li>Start each item (number-period-space) like <code class="highlighter-rouge">1. </code></li>
           <li>It doesn’t matter what number you use, I will render them sequentially</li>
-          <li>So you might want to start each line with <code>1.</code> and let me sort it out</li>
+          <li>So you might want to start each line with <code class="highlighter-rouge">1.</code> and let me sort it out</li>
         </ol>
       </li>
     </ul>
@@ -268,7 +271,7 @@ on it’s own line elsewhere:<br />
 
 <p>Here is the code:</p>
 
-<p><code>
+<p><code class="highlighter-rouge">
 * Lists must be preceded by a blank line (or block element)
 * Unordered lists start each item with a `*`
 - `-` works too
@@ -282,8 +285,8 @@ on it’s own line elsewhere:<br />
 <h3 id="block-quote">Block Quote</h3>
 
 <blockquote>
-  <p>Angle brackets <code>&gt;</code> are used for block quotes.<br />
-Technically not every line needs to start with a <code>&gt;</code> as long as
+  <p>Angle brackets <code class="highlighter-rouge">&gt;</code> are used for block quotes.<br />
+Technically not every line needs to start with a <code class="highlighter-rouge">&gt;</code> as long as
 there are no empty lines between paragraphs.<br />
 Looks kinda ugly though.
 &gt; Block quotes can be nested.<br />
@@ -300,7 +303,7 @@ Looks kinda ugly though.
 
 <p>Here is the code:</p>
 
-<p><code>
+<p><code class="highlighter-rouge">
 &gt; Angle brackets `&gt;` are used for block quotes.  
 Technically not every line needs to start with a `&gt;` as long as
 there are no empty lines between paragraphs.  
@@ -316,25 +319,26 @@ there are no empty lines between paragraphs.
 </code></p>
 
 <h3 id="inline-code">Inline Code</h3>
-<p><code>Inline code</code> is indicated by surrounding it with backticks:<br />
-<code>`Inline code`</code></p>
+<p><code class="highlighter-rouge">Inline code</code> is indicated by surrounding it with backticks:<br />
+<code class="highlighter-rouge">`Inline code`</code></p>
 
-<p>If your <code>code has `backticks`</code> that need to be displayed, you can use double backticks:<br />
-<code>``Code with `backticks` ``</code>  (mind the spaces preceding the final set of backticks)</p>
+<p>If your <code class="highlighter-rouge">code has `backticks`</code> that need to be displayed, you can use double backticks:<br />
+<code class="highlighter-rouge">``Code with `backticks` ``</code>  (mind the spaces preceding the final set of backticks)</p>
 
 <h3 id="block-code">Block Code</h3>
 <p>If you indent at least four spaces or one tab, I’ll display a code block.</p>
 
-<pre><code>print('This is a code block')
+<div class="highlighter-rouge"><pre class="highlight"><code>print('This is a code block')
 print('The block must be preceded by a blank line')
 print('Then indent at least 4 spaces or 1 tab')
 	print('Nesting does nothing. Your code is displayed Literally')
 </code></pre>
+</div>
 
 <p>I also know how to do something called <a href="#fenced-code-block">Fenced Code Blocks</a> which I will tell you about later.</p>
 
 <h3 id="horizontal-rules">Horizontal Rules</h3>
-<p>If you type three asterisks <code>***</code> or three dashes <code>---</code> on a line, I’ll display a horizontal rule:</p>
+<p>If you type three asterisks <code class="highlighter-rouge">***</code> or three dashes <code class="highlighter-rouge">---</code> on a line, I’ll display a horizontal rule:</p>
 
 <hr />
 
@@ -343,7 +347,7 @@ print('Then indent at least 4 spaces or 1 tab')
 <img src="http://d.pr/i/RQEi+" alt="Markdown preferences pane" /></p>
 
 <h3 id="document-formatting">Document Formatting</h3>
-<p>The <strong><em>Smartypants</em></strong> extension automatically transforms straight quotes (<code>"</code> and <code>'</code>) in your text into typographer’s quotes (<code>“</code>, <code>”</code>, <code>‘</code>, and <code>’</code>) according to the context. Very useful if you’re a typography freak like I am. Quote and Smartypants are syntactically incompatible. If both are enabled, Quote takes precedence.</p>
+<p>The <strong><em>Smartypants</em></strong> extension automatically transforms straight quotes (<code class="highlighter-rouge">"</code> and <code class="highlighter-rouge">'</code>) in your text into typographer’s quotes (<code class="highlighter-rouge">“</code>, <code class="highlighter-rouge">”</code>, <code class="highlighter-rouge">‘</code>, and <code class="highlighter-rouge">’</code>) according to the context. Very useful if you’re a typography freak like I am. Quote and Smartypants are syntactically incompatible. If both are enabled, Quote takes precedence.</p>
 
 <h3 id="block-formatting">Block Formatting</h3>
 
@@ -399,20 +403,21 @@ print('Then indent at least 4 spaces or 1 tab')
   </tbody>
 </table>
 
-<p>The left- and right-most pipes (<code>|</code>) are only aesthetic, and can be omitted. The spaces don’t matter, either. Alignment depends solely on <code>:</code> marks.</p>
+<p>The left- and right-most pipes (<code class="highlighter-rouge">|</code>) are only aesthetic, and can be omitted. The spaces don’t matter, either. Alignment depends solely on <code class="highlighter-rouge">:</code> marks.</p>
 
 <h4 id="a-namefenced-code-blockfenced-code-blocka"><a name="fenced-code-block">Fenced Code Block</a></h4>
 
 <p>This is a fenced code block:</p>
 
-<p><code>
+<p><code class="highlighter-rouge">
 print ('Hello world!)'
 </code></p>
 
-<p>You can also use waves (<code>~</code>) instead of back ticks (<code>`</code>):</p>
+<p>You can also use waves (<code class="highlighter-rouge">~</code>) instead of back ticks (<code class="highlighter-rouge">`</code>):</p>
 
-<pre><code>print('Hello world!')
+<div class="highlighter-rouge"><pre class="highlight"><code>print('Hello world!')
 </code></pre>
+</div>
 
 <p>You can add an optional language ID at the end of the first line. The language ID will only be used to highlight the code inside if you tick the <strong><em>Enable highlighting in code blocks</em></strong> option. This is what happens if you enable it:</p>
 
@@ -513,7 +518,7 @@ print ('Hello world!)'
 </ol>
 
 <h3 id="jekyll-front-matter">Jekyll front-matter</h3>
-<p>If you like, I can display Jekyll front-matter in a nice table. Just make sure you put the front-matter at the very beginning of the file, and fence it with <code>---</code>. For example:</p>
+<p>If you like, I can display Jekyll front-matter in a nice table. Just make sure you put the front-matter at the very beginning of the file, and fence it with <code class="highlighter-rouge">---</code>. For example:</p>
 
 <h2 id="section">```</h2>
 <p>title: “Macdown is my friend”
@@ -529,7 +534,7 @@ date: 2014-06-06 20:00:00
 <p>This is where I keep preferences related to application behavior.<br />
 <img src="http://d.pr/i/rvwu+" alt="General preferences pane" /></p>
 
-<p>The General Preferences Pane allows you to tell me how you want me to behave. For example, do you want me to make sure there is a document open when I launch? You can also tell me if I should constantly update the preview window as you type, or wait for you to hit <code>command-R</code> instead. Maybe you prefer your editor window on the right? Or to see the word-count as you type. This is also the place to tell me if you are interested in pre-releases of me, or just want to stick to better-tested official releases.</p>
+<p>The General Preferences Pane allows you to tell me how you want me to behave. For example, do you want me to make sure there is a document open when I launch? You can also tell me if I should constantly update the preview window as you type, or wait for you to hit <code class="highlighter-rouge">command-R</code> instead. Maybe you prefer your editor window on the right? Or to see the word-count as you type. This is also the place to tell me if you are interested in pre-releases of me, or just want to stick to better-tested official releases.</p>
 
 <h2 id="a-nameeditor-paneathe-editor-preference-pane"><a name="editor-pane"></a>The Editor Preference Pane</h2>
 <p>This is where I keep preferences related to the behavior and styling of the editing window.<br />
@@ -539,7 +544,7 @@ date: 2014-06-06 20:00:00
 
 <p>My editor provides syntax highlighting. You can edit the base font and the coloring/sizing theme. I provided some default themes (courtesy of <a href="http://mouapp.com">Mou</a>’s creator, Chen Luo) if you don’t know where to start.</p>
 
-<p>You can also edit, or even add new themes if you want to! Just click the <strong><em>Reveal</em></strong> button, and start moving things around. Remember to use the correct file extension (<code>.styles</code>), though. I’m picky about that.</p>
+<p>You can also edit, or even add new themes if you want to! Just click the <strong><em>Reveal</em></strong> button, and start moving things around. Remember to use the correct file extension (<code class="highlighter-rouge">.styles</code>), though. I’m picky about that.</p>
 
 <p>I offer auto-completion and other functions to ease your editing experience. If you don’t like it, however, you can turn them off.</p>
 
@@ -552,16 +557,16 @@ date: 2014-06-06 20:00:00
 <div class="footnotes">
   <ol>
     <li id="fn:emphasize">
-      <p>If <strong>Underlines</strong> is turned on, <code>_this notation_</code> will render as underlined instead of emphasized <a href="#fnref:emphasize" class="reversefootnote">&#8617;</a></p>
+      <p>If <strong>Underlines</strong> is turned on, <code class="highlighter-rouge">_this notation_</code> will render as underlined instead of emphasized <a href="#fnref:emphasize" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:under">
-      <p>If <strong>Underline</strong> is disabled <code>_this_</code> will be rendered as <em>emphasized</em> instead of being underlined. <a href="#fnref:under" class="reversefootnote">&#8617;</a></p>
+      <p>If <strong>Underline</strong> is disabled <code class="highlighter-rouge">_this_</code> will be rendered as <em>emphasized</em> instead of being underlined. <a href="#fnref:under" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:quote">
-      <p><strong>Quote</strong> replaces literal <code>"</code> characters with html <code>&lt;q&gt;</code> tags. <strong>Quote</strong> and <strong>Smartypants</strong> are syntactically incompatible. If both are enabled, <strong>Quote</strong> takes precedence. Note that <strong>Quote</strong> is different from <em>blockquote</em>, which is part of standard Markdown. <a href="#fnref:quote" class="reversefootnote">&#8617;</a></p>
+      <p><strong>Quote</strong> replaces literal <code class="highlighter-rouge">"</code> characters with html <code class="highlighter-rouge">&lt;q&gt;</code> tags. <strong>Quote</strong> and <strong>Smartypants</strong> are syntactically incompatible. If both are enabled, <strong>Quote</strong> takes precedence. Note that <strong>Quote</strong> is different from <em>blockquote</em>, which is part of standard Markdown. <a href="#fnref:quote" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:4">
-      <p>You don’t have to use a number. Arbitrary things like <code>[^footy note4]</code> and <code>[^footy note4]:</code> will also work. But they will <em>render</em> as numbered footnotes. Also, no need to keep your footnotes in order, I will sort out the order for you so they appear in the same order they were referenced in the text body. You can even keep some footnotes near where you referenced them, and collect others at the bottom of the file in the traditional place for footnotes. <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+      <p>You don’t have to use a number. Arbitrary things like <code class="highlighter-rouge">[^footy note4]</code> and <code class="highlighter-rouge">[^footy note4]:</code> will also work. But they will <em>render</em> as numbered footnotes. Also, no need to keep your footnotes in order, I will sort out the order for you so they appear in the same order they were referenced in the text body. You can even keep some footnotes near where you referenced them, and collect others at the bottom of the file in the traditional place for footnotes. <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:math">
       <p>Internet connection required. <a href="#fnref:math" class="reversefootnote">&#8617;</a></p>
@@ -596,12 +601,13 @@ date: 2014-06-06 20:00:00
 <ul>
   <li><a href="https://github.com/skiluo/acm/blob/master/zju/1711.cpp">ZJU 1711</a></li>
   <li><a href="https://github.com/skiluo/acm/blob/master/zju/1457.cpp">ZJU 1457</a></li>
-  <li><em><a href="https://github.com/skiluo/acm/blob/master/zju/1457.cpp">codeforces 662B</a></em></li>
+  <li><em><a href="https://github.com/skiluo/acm/blob/master/codeforces/662b.cpp">codeforces 662B</a></em></li>
 </ul>
 
-<p><code>
+<p><code class="highlighter-rouge">
   1. 纪录每个点都有哪些边，对应哪个点。
-  2. 假设结果为颜色c，假设一个点a没变色（0），计算这个点周围所有边变成c需要变色的点数；若点a变色（1），计算这个点周围所有边变成c需要变色的点数，取变色点数较少的假设，纪录a及a周边店的状态；
+  2. 假设结果为颜色c，假设一个点a没变色（0），计算这个点周围所有边变成c需要变色的点数；若点a变色（1），
+  计算这个点周围所有边变成c需要变色的点数，取变色点数较少的假设，纪录a及a周边点的状态；
   3. 遍历所有的点
 </code></p>
 
