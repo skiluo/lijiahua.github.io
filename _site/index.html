@@ -596,7 +596,14 @@ date: 2014-06-06 20:00:00
 <ul>
   <li><a href="https://github.com/skiluo/acm/blob/master/zju/1711.cpp">ZJU 1711</a></li>
   <li><a href="https://github.com/skiluo/acm/blob/master/zju/1457.cpp">ZJU 1457</a></li>
+  <li><em><a href="https://github.com/skiluo/acm/blob/master/zju/1457.cpp">codeforces 662B</a></em></li>
 </ul>
+
+<p><code>
+  1. 纪录每个点都有哪些边，对应哪个点。
+  2. 假设结果为颜色c，假设一个点a没变色（0），计算这个点周围所有边变成c需要变色的点数；若点a变色（1），计算这个点周围所有边变成c需要变色的点数，取变色点数较少的假设，纪录a及a周边店的状态；
+  3. 遍历所有的点
+</code></p>
 
 <h2 id="bfs">广度优先搜索(BFS)</h2>
 <ul>
