@@ -10,5 +10,6 @@
 /sitemap.txt
 /tags
 
+/acm/2016/05/23/acm_%E5%9F%BA%E7%A1%80%E7%BB%83%E4%B9%A0_1
 /2016/04/25/markdown_help
 /acm/2016/04/25/acm_%E6%90%9C%E7%B4%A2_1

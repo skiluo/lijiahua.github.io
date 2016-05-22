@@ -4,13 +4,34 @@
  <title>skiluo</title>
  <link href="/" rel="self"/>
  <link href=""/>
- <updated>2016-05-20T03:38:58+08:00</updated>
+ <updated>2016-05-23T02:12:54+08:00</updated>
  <id></id>
  <author>
    <name>Jiahua Li</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>基础算法</title>
+   <link href="/acm/2016/05/23/acm_%E5%9F%BA%E7%A1%80%E7%BB%83%E4%B9%A0_1"/>
+   <updated>2016-05-23T00:00:00+08:00</updated>
+   <id>/acm/2016/05/23/acm_基础练习_1</id>
+   <content type="html">&lt;p&gt;coding百遍，其意自现&lt;/p&gt;
+
+&lt;p&gt;1．最短路（Floyd、Dijstra、BellmanFord）； 
+floyd&lt;/p&gt;
+
+&lt;p&gt;2．最小生成树（先写个prim，kruscal要用并查集，不好写）； 　　
+3．大数（高精度）加减乘除；　　
+4．二分查找（代码可在五行以内）； 　　
+5．叉乘、判线段相交、然后写个凸包；　　
+6．BFS、DFS，同时熟练hash表（要熟，要灵活,代码要简）；　　
+7．数学上的有：辗转相除（两行内），线段交点、多角形面积公式；　　
+8．调用系统的qsort, 技巧很多，慢慢掌握；　　
+9．任意进制间的转换&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Markdown_help</title>
