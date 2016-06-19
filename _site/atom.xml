@@ -4,7 +4,7 @@
  <title>skiluo</title>
  <link href="/" rel="self"/>
  <link href=""/>
- <updated>2016-05-23T02:12:54+08:00</updated>
+ <updated>2016-06-19T22:45:43+08:00</updated>
  <id></id>
  <author>
    <name>Jiahua Li</name>
@@ -13,14 +13,27 @@
 
  
  <entry>
+   <title>K-means</title>
+   <link href="/data%20mining/2016/06/15/dataMining_%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95_k-means"/>
+   <updated>2016-06-15T00:00:00+08:00</updated>
+   <id>/data%20mining/2016/06/15/dataMining_基础算法_k-means</id>
+   <content type="html">&lt;p&gt;1.K-means
+存在一个样本数据集合，也称作训练样本集，并且样本集中每个数据都存在标签，即知道样本集中每一数据与所属分类的对应关系。输入没有标签的新数据后，
+将新数据的每个特征与样本集中数据的对应特征进行比较，然后算法提取样本集中特征最相似（最近邻）数据的分类标签。一般来说，我们只选择样本数据集
+中前k个最相似的数据（通常k是不大于20的整数），选择k个最相似数据中出现次数最多的分类，作为新数据的分类。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>基础算法</title>
    <link href="/acm/2016/05/23/acm_%E5%9F%BA%E7%A1%80%E7%BB%83%E4%B9%A0_1"/>
    <updated>2016-05-23T00:00:00+08:00</updated>
    <id>/acm/2016/05/23/acm_基础练习_1</id>
    <content type="html">&lt;p&gt;coding百遍，其意自现&lt;/p&gt;
 
-&lt;p&gt;1．最短路（Floyd、Dijstra、BellmanFord）； 
-floyd&lt;/p&gt;
+&lt;p&gt;1．最短路（Floyd、Dijstra、BellmanFord）；&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.chinaunix.net/uid-26548237-id-3834873.html&quot;&gt;floyd&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;2．最小生成树（先写个prim，kruscal要用并查集，不好写）； 　　
 3．大数（高精度）加减乘除；　　

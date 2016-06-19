@@ -1,6 +1,6 @@
 ---
 categories:
-  - acm
+  - data mining
 tags:
   - '基础算法'
 comment: 
